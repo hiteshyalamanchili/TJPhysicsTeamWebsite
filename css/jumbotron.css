@@ -1,0 +1,13 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 12px 15px;
+    font-size: 22px;
+    line-height: 24px;
+}

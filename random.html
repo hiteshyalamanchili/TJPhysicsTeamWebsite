@@ -1,0 +1,2532 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css" media="all">
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTa-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTZX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTaaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTf8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTT0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5URJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/LWCjsQkB6EMdfHrEVqA1KRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/xozscpT2726on7jbcb_pAhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/59ZRklaO5bWGqF5A9baEERJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSq-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSpX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSqaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSv8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSj0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzK-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzJX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzP8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzD0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxhgVThLs8Y7ETJzDCYFCSLE.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxpiMaisvaUVUsYyVzOmndek.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxrBAWGjcah5Ky0jbCgIwDB8.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxv14vlcfyPYlAcQy2UfDRm4.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxqfJul7RR1X4poJgi27uS4w.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxqvyPXdneeGd26m9EmFSSWg.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxko2lTMeWA_kmIyWrkNCwPc.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBjTOQ_MqJVwkKsUn0wKzc2I.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBjUj_cnvWIuuBMVgbX098Mw.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBkbcKLIaa1LC45dFaAfauRA.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBmo_sUJ8uO4YLWRInS22T3Y.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBr6up8jxqWt8HVA3mDhkV_0.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBiYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        
+        @font-face {
+            font-family: 'Open Sans';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+        }
+        
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZjTOQ_MqJVwkKsUn0wKzc2I.woff2) format('woff2');
+            unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
+        }
+        
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZjUj_cnvWIuuBMVgbX098Mw.woff2) format('woff2');
+            unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+        }
+        
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZkbcKLIaa1LC45dFaAfauRA.woff2) format('woff2');
+            unicode-range: U+1F00-1FFF
+        }
+        
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zmo_sUJ8uO4YLWRInS22T3Y.woff2) format('woff2');
+            unicode-range: U+0370-03FF
+        }
+        
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zr6up8jxqWt8HVA3mDhkV_0.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB
+        }
+        
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZiYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+        }
+        
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+        }
+        
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+        
+        body {
+            margin: 0
+        }
+        
+        article,
+        aside,
+        header,
+        main,
+        nav {
+            display: block
+        }
+        
+        a {
+            background-color: transparent
+        }
+        
+        b {
+            font-weight: bold
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+        
+        img {
+            border: 0
+        }
+        
+        button,
+        input {
+            color: inherit;
+            font: inherit;
+            margin: 0
+        }
+        
+        button {
+            overflow: visible
+        }
+        
+        button {
+            text-transform: none
+        }
+        
+        button,
+        input[type="submit"] {
+            -webkit-appearance: button;
+            cursor: pointer
+        }
+        
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0
+        }
+        
+        input {
+            line-height: normal
+        }
+        
+        input[type="search"] {
+            -webkit-appearance: textfield;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box
+        }
+        
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+        
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        *:before,
+        *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        html {
+            font-size: 10px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+        
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff
+        }
+        
+        input,
+        button {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit
+        }
+        
+        a {
+            color: #337ab7;
+            text-decoration: none
+        }
+        
+        img {
+            vertical-align: middle
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0
+        }
+        
+        h1,
+        h2,
+        h3 {
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.1;
+            color: inherit
+        }
+        
+        h1,
+        h2,
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px
+        }
+        
+        h1 {
+            font-size: 36px
+        }
+        
+        h2 {
+            font-size: 30px
+        }
+        
+        h3 {
+            font-size: 24px
+        }
+        
+        p {
+            margin: 0 0 10px
+        }
+        
+        .text-center {
+            text-align: center
+        }
+        
+        .page-header {
+            padding-bottom: 9px;
+            margin: 40px 0 20px;
+            border-bottom: 1px solid #eee
+        }
+        
+        ul,
+        ol {
+            margin-top: 0;
+            margin-bottom: 10px
+        }
+        
+        ul ul {
+            margin-bottom: 0
+        }
+        
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px
+        }
+        
+        @media(min-width:768px) {
+            .container {
+                width: 750px
+            }
+        }
+        
+        @media(min-width:992px) {
+            .container {
+                width: 970px
+            }
+        }
+        
+        @media(min-width:1200px) {
+            .container {
+                width: 1170px
+            }
+        }
+        
+        .row {
+            margin-left: -15px;
+            margin-right: -15px
+        }
+        
+        .col-md-3,
+        .col-sm-4,
+        .col-sm-8,
+        .col-md-9 {
+            position: relative;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px
+        }
+        
+        @media(min-width:768px) {
+            .col-sm-4,
+            .col-sm-8 {
+                float: left
+            }
+            .col-sm-8 {
+                width: 66.66666667%
+            }
+            .col-sm-4 {
+                width: 33.33333333%
+            }
+        }
+        
+        @media(min-width:992px) {
+            .col-md-3,
+            .col-md-9 {
+                float: left
+            }
+            .col-md-9 {
+                width: 75%
+            }
+            .col-md-3 {
+                width: 25%
+            }
+            .col-md-offset-1 {
+                margin-left: 8.33333333%
+            }
+        }
+        
+        input[type="search"] {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        
+        input[type="search"] {
+            -webkit-appearance: none
+        }
+        
+        .btn {
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: normal;
+            text-align: center;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            white-space: nowrap;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+        
+        .btn-primary {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4
+        }
+        
+        .btn-lg {
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px
+        }
+        
+        .collapse {
+            display: none
+        }
+        
+        .caret {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: 2px;
+            vertical-align: middle;
+            border-top: 4px dashed;
+            border-top: 4px solid \9;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent
+        }
+        
+        .dropdown {
+            position: relative
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            float: left;
+            min-width: 160px;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            list-style: none;
+            font-size: 14px;
+            text-align: left;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box
+        }
+        
+        .dropdown-menu>li>a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.42857143;
+            color: #333;
+            white-space: nowrap
+        }
+        
+        .dropdown-menu>.active>a {
+            color: #fff;
+            text-decoration: none;
+            outline: 0;
+            background-color: #337ab7
+        }
+        
+        .nav {
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style: none
+        }
+        
+        .nav>li {
+            position: relative;
+            display: block
+        }
+        
+        .nav>li>a {
+            position: relative;
+            display: block;
+            padding: 10px 15px
+        }
+        
+        .navbar {
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 20px;
+            border: 1px solid transparent
+        }
+        
+        @media(min-width:992px) {
+            .navbar {
+                border-radius: 4px
+            }
+        }
+        
+        @media(min-width:992px) {
+            .navbar-header {
+                float: left
+            }
+        }
+        
+        .navbar-collapse {
+            overflow-x: visible;
+            padding-right: 15px;
+            padding-left: 15px;
+            border-top: 1px solid transparent;
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            -webkit-overflow-scrolling: touch
+        }
+        
+        @media(min-width:992px) {
+            .navbar-collapse {
+                width: auto;
+                border-top: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none
+            }
+            .navbar-collapse.collapse {
+                display: block !important;
+                height: auto !important;
+                padding-bottom: 0;
+                overflow: visible !important
+            }
+        }
+        
+        .navbar-toggle {
+            position: relative;
+            float: right;
+            margin-right: 15px;
+            padding: 9px 10px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            background-color: transparent;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px
+        }
+        
+        .navbar-toggle .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px
+        }
+        
+        .navbar-toggle .icon-bar+.icon-bar {
+            margin-top: 4px
+        }
+        
+        @media(min-width:992px) {
+            .navbar-toggle {
+                display: none
+            }
+        }
+        
+        .navbar-nav {
+            margin: 7.5px -15px
+        }
+        
+        .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 20px
+        }
+        
+        @media(min-width:992px) {
+            .navbar-nav {
+                float: left;
+                margin: 0
+            }
+            .navbar-nav>li {
+                float: left
+            }
+            .navbar-nav>li>a {
+                padding-top: 15px;
+                padding-bottom: 15px
+            }
+        }
+        
+        .navbar-nav>li>.dropdown-menu {
+            margin-top: 0;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0
+        }
+        
+        .navbar-default {
+            background-color: #f8f8f8;
+            border-color: #e7e7e7
+        }
+        
+        .navbar-default .navbar-nav>li>a {
+            color: #777
+        }
+        
+        .navbar-default .navbar-nav>.active>a {
+            color: #555;
+            background-color: #e7e7e7
+        }
+        
+        .navbar-default .navbar-toggle {
+            border-color: #ddd
+        }
+        
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #888
+        }
+        
+        .navbar-default .navbar-collapse {
+            border-color: #e7e7e7
+        }
+        
+        .breadcrumb {
+            padding: 8px 15px;
+            margin-bottom: 20px;
+            list-style: none;
+            background-color: #f5f5f5;
+            border-radius: 4px
+        }
+        
+        .breadcrumb>li {
+            display: inline-block
+        }
+        
+        .breadcrumb>li+li:before {
+            content: "/\00a0";
+            padding: 0 5px;
+            color: #ccc
+        }
+        
+        .breadcrumb>.active {
+            color: #777
+        }
+        
+        .close {
+            float: right;
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 1;
+            color: #000;
+            text-shadow: 0 1px 0 #fff;
+            opacity: .2;
+            filter: alpha(opacity=20)
+        }
+        
+        button.close {
+            padding: 0;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            -webkit-appearance: none
+        }
+        
+        .container:before,
+        .container:after,
+        .row:before,
+        .row:after,
+        .nav:before,
+        .nav:after,
+        .navbar:before,
+        .navbar:after,
+        .navbar-header:before,
+        .navbar-header:after,
+        .navbar-collapse:before,
+        .navbar-collapse:after {
+            content: " ";
+            display: table
+        }
+        
+        .container:after,
+        .row:after,
+        .nav:after,
+        .navbar:after,
+        .navbar-header:after,
+        .navbar-collapse:after {
+            clear: both
+        }
+        
+        .pull-right {
+            float: right !important
+        }
+        
+        .visible-xs,
+        .visible-sm {
+            display: none !important
+        }
+        
+        @media(max-width:767px) {
+            .visible-xs {
+                display: block !important
+            }
+        }
+        
+        @media(min-width:768px) and (max-width:991px) {
+            .visible-sm {
+                display: block !important
+            }
+        }
+        
+        @media(max-width:767px) {
+            .hidden-xs {
+                display: none !important
+            }
+        }
+        
+        @media(min-width:992px) and (max-width:1199px) {
+            .hidden-md {
+                display: none !important
+            }
+        }
+        
+        @media(min-width:1200px) {
+            .hidden-lg {
+                display: none !important
+            }
+        }
+        
+        .navmenu {
+            width: 300px;
+            height: auto;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 4px
+        }
+        
+        .navmenu-fixed-right {
+            position: fixed;
+            z-index: 1030;
+            top: 0;
+            bottom: 0;
+            overflow-y: auto;
+            border-radius: 0
+        }
+        
+        .navmenu-fixed-right {
+            left: auto;
+            right: 0;
+            border-width: 0 0 0 1px
+        }
+        
+        .navmenu-nav {
+            margin-bottom: 10px
+        }
+        
+        .navmenu-brand {
+            display: block;
+            font-size: 18px;
+            line-height: 20px;
+            padding: 10px 15px;
+            margin: 10px 0
+        }
+        
+        .offcanvas {
+            display: none
+        }
+        
+        @font-face {
+            font-family: 'fontello';
+            src: url(//profromgo.com/wp-content/themes/profromgo/css/../fonts/fontello.eot?91317977);
+            src: url(//profromgo.com/wp-content/themes/profromgo/css/../fonts/fontello.eot?91317977#iefix) format('embedded-opentype'), url(//profromgo.com/wp-content/themes/profromgo/css/../fonts/fontello.woff?91317977) format('woff'), url(//profromgo.com/wp-content/themes/profromgo/css/../fonts/fontello.ttf?91317977) format('truetype'), url(//profromgo.com/wp-content/themes/profromgo/css/../fonts/fontello.svg?91317977#fontello) format('svg');
+            font-weight: normal;
+            font-style: normal
+        }
+        
+        [class*=" fa-"]:before {
+            font-family: "fontello";
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            text-align: center;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+        
+        .fa-user:before {
+            content: '\e800'
+        }
+        
+        .fa-search:before {
+            content: '\e801'
+        }
+        
+        .widget {
+            margin: 0 0 1.5em
+        }
+        
+        html {
+            overflow-x: hidden !important
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #fff;
+            font-size: 16px;
+            color: #333;
+            overflow-x: hidden !important;
+            height: 100% !important
+        }
+        
+        .header-phone {
+            position: absolute;
+            background: #7fa9c0;
+            color: #FFF;
+            font-size: 25px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            padding: 6px 15px;
+            line-height: 40px;
+            bottom: -55px;
+            box-shadow: 0 7px 10px rgba(0, 0, 0, .2);
+            right: 45px
+        }
+        
+        .header-phone i {
+            font-size: 40px;
+            vertical-align: middle
+        }
+        
+        .alignleft {
+            display: inline-block;
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 30px
+        }
+        
+        .alignright {
+            display: inline-block;
+            float: right;
+            margin-left: 30px;
+            margin-bottom: 30px
+        }
+        
+        .aligncenter {
+            clear: both;
+            display: block;
+            margin: 0 auto
+        }
+        
+        #page-banner .btn {
+            background: none;
+            border: 2px solid #7fa9c0;
+            padding: 12px 42px;
+            border-radius: 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            outline: 0 !important;
+            transition: all .4s
+        }
+        
+        .col-sm-8.col-sm-offset-4>h2,
+        .entry-content>h2:first-child,
+        .entry-content>*:first-child>h2:first-child {
+            margin-top: 0
+        }
+        
+        #sort-by-service {
+            border-top: 1px solid #81aac1;
+            padding-top: 60px;
+            margin-top: 30px;
+            margin-bottom: 50px
+        }
+        
+        #sort-by-service a,
+        #sort-by-service img {
+            display: inline-block
+        }
+        
+        #sort-by-service h3 {
+            margin-bottom: 30px
+        }
+        
+        #sort-by-service h5 {
+            font-size: 12px;
+            color: #205268;
+            display: block
+        }
+        
+        #sort-by-service img {
+            width: auto;
+            height: 53px
+        }
+        
+        #sort-by-service a {
+            margin: 0 15px;
+            cursor: pointer;
+            width: 105px;
+            vertical-align: top
+        }
+        
+        .section {
+            padding: 80px 0
+        }
+        
+        #page-banner {
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('img/banner-home.jpg');
+            min-height: 300px;
+            position: relative;
+            color: #FFF;
+            padding-bottom: 0;
+            margin-bottom: 15px;
+            opacity: 0
+        }
+        
+        #page-banner h1 {
+            font-size: 60px;
+            text-align: center;
+            height: 60px;
+            font-weight: normal;
+            margin: 0 0 40px;
+            display: block
+        }
+        
+        #page-banner h1.page-title {
+            font-size: 30px;
+            text-align: left;
+            font-weight: 700;
+            margin-bottom: 0;
+            height: auto
+        }
+        
+        #page-banner h1:before,
+        #page-banner h1:after {
+            display: none
+        }
+        
+        #page-banner .caption img {
+            margin-bottom: 40px
+        }
+        
+        .home #page-banner {
+            margin-bottom: 0;
+            border-bottom: 12px solid #d04936;
+            padding-bottom: 40px;
+            margin-top: -171px
+        }
+        
+        a {
+            font-weight: normal
+        }
+        
+        h1 {
+            color: #205268
+        }
+        
+        h2,
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            color: #205268
+        }
+        
+        .sr-only {
+            display: none
+        }
+        
+        .entry-content ul {
+            margin-bottom: 1.5em
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', cursive;
+            font-weight: 500
+        }
+        
+        h1 {
+            font-size: 40px;
+            display: inline-block;
+            margin-bottom: 60px;
+            position: relative
+        }
+        
+        .styled_title {
+            text-align: center
+        }
+        
+        .styled_title h1:before {
+            width: 393px;
+            height: 5px;
+            background-position: -5px -5px;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            left: -405px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            content: " "
+        }
+        
+        .styled_title h1:after {
+            width: 393px;
+            height: 5px;
+            background-position: -5px -20px;
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            right: -405px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            content: " "
+        }
+        
+        h2 {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 1rem;
+            color: #1f5269
+        }
+        
+        *+h2 {
+            margin-top: 3rem
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: bold
+        }
+        
+        #masthead {
+            position: relative;
+            z-index: 1000;
+            background: rgba(32, 82, 104, 1);
+            border-bottom: 12px solid #7fa9c0
+        }
+        
+        .page-header {
+            border: 0;
+            margin-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 60px
+        }
+        
+        .page-header h1 {
+            margin: 10px 0 0
+        }
+        
+        .styled_title {
+            position: relative
+        }
+        
+        #off-canvas-navigation {
+            background: #033b50;
+            border: 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, .7)
+        }
+        
+        #off-canvas-navigation a {
+            color: #FFF;
+            cursor: pointer
+        }
+        
+        #off-canvas-navigation a .caret {
+            border-top-color: #FFF;
+            border-bottom-color: #FFF
+        }
+        
+        #off-canvas-navigation .dropdown-menu {
+            position: relative;
+            float: none;
+            background: rgba(0, 0, 0, .3);
+            border: 0;
+            border-radius: 0;
+            margin: 0;
+            z-index: 1000
+        }
+        
+        #off-canvas-navigation .close {
+            color: #FFF;
+            opacity: .8;
+            position: relative;
+            top: 17px;
+            right: 15px
+        }
+        
+        #off-canvas-navigation .dropdown-menu a {
+            padding-top: 6px;
+            padding-bottom: 6px
+        }
+        
+        #breadcrumbs {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        
+        #breadcrumbs a,
+        #breadcrumbs>li+li:before {
+            color: #999;
+            padding-right: 0
+        }
+        
+        #breadcrumbs>.active {
+            color: #205268
+        }
+        
+        .breadcrumb {
+            background: none
+        }
+        
+        p {
+            margin-bottom: 1em
+        }
+        
+        #secondary {
+            background: #1f5269;
+            color: #FFF;
+            text-align: center;
+            font-size: 15px
+        }
+        
+        #secondary img {
+            margin-top: 20px
+        }
+        
+        .entry-content img {
+            max-width: 100%;
+            height: auto
+        }
+        
+        #secondary h3 {
+            font-size: 24px;
+            color: #FFF
+        }
+        
+        #secondary h3:after {
+            display: block;
+            content: " ";
+            width: 105px;
+            height: 2px;
+            background: #FFF;
+            margin: 20px auto
+        }
+        
+        #secondary .widget {
+            margin-bottom: 50px
+        }
+        
+        .img-center img {
+            display: inline-block;
+            margin-left: 30px;
+            margin-right: 30px
+        }
+        
+        #below_content * {
+            font-family: 'Open Sans', sans-serif !important
+        }
+        
+        #below_content .hs-field-desc {
+            color: #1f5269;
+            font-size: 21px;
+            margin-bottom: 7px;
+            margin-top: -5px;
+            opacity: .9
+        }
+        
+        p:empty {
+            display: none
+        }
+        
+        #search {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            -webkit-transform: translate(0, -100%) scale(0, 0);
+            -moz-transform: translate(0, -100%) scale(0, 0);
+            -o-transform: translate(0, -100%) scale(0, 0);
+            -ms-transform: translate(0, -100%) scale(0, 0);
+            transform: translate(0, -100%) scale(0, 0);
+            opacity: 0;
+            z-index: 1000;
+            font-weight: normal
+        }
+        
+        #search input[type="search"] {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            color: #fff;
+            background: rgba(0, 0, 0, 0);
+            font-size: 60px;
+            font-weight: normal;
+            text-align: center;
+            border: 0;
+            margin: 0 auto;
+            margin-top: -51px;
+            padding-left: 30px;
+            padding-right: 30px;
+            outline: 0
+        }
+        
+        #search .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: 61px;
+            margin-left: -45px;
+            background: none;
+            border: 2px solid #7fa9c0;
+            padding: 12px 42px;
+            border-radius: 0;
+            font-size: 18px;
+            text-transform: uppercase;
+            outline: 0 !important;
+            transition: all .4s
+        }
+        
+        #search .close {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            color: #fff;
+            background-color: #7fa9c0;
+            border-color: #7fa9c0;
+            opacity: 1;
+            padding: 10px 17px;
+            font-size: 27px
+        }
+        
+        #site-navigation a {
+            font-family: Arial, Helvetica, sans-serif
+        }
+        
+        .btn {
+            border-radius: 0
+        }
+        
+        .styled_title h1:before,
+        .styled_title h1:after {
+            background-image: url(//profromgo.com/wp-content/themes/profromgo/img/sprites.png);
+            background-repeat: no-repeat;
+            display: block
+        }
+        
+        @media(min-width:768px) {
+            div>br {
+                display: none
+            }
+            .home #page-banner {
+                padding-top: 355px;
+                padding-bottom: 175px;
+                background-size: auto 115%
+            }
+            #masthead .site-branding {
+                padding-top: 40px
+            }
+            #masthead .site-title {
+                padding: 20px 0
+            }
+            #site-navigation {
+                border-radius: 0;
+                border: 0;
+                background: none;
+                margin: 0;
+                float: right;
+                font-weight: 400
+            }
+            #site-navigation .navbar-nav>li>a {
+                color: #FFF;
+                font-size: 14px;
+                text-transform: uppercase;
+                padding: 69px 20px;
+                height: 159px
+            }
+            #site-navigation .navbar-nav>li.active>a {
+                background: #7fa9c0 !important
+            }
+            #site-navigation .navbar-nav>li.client-area-toggle>a,
+            #site-navigation .navbar-nav>li.search-initiate>a {
+                color: #7fa9c0;
+                font-size: 20px
+            }
+            #site-navigation .navbar-nav>li.client-area-toggle {
+                margin-left: 30px
+            }
+            #site-navigation .navbar-nav>li.client-area-toggle>a:before {
+                display: block;
+                content: " ";
+                width: 1px;
+                height: 43px;
+                position: absolute;
+                top: 0;
+                left: -15px;
+                bottom: 0;
+                margin: auto;
+                background: #7fa9c0
+            }
+            #site-navigation .dropdown-menu {
+                background: #205268;
+                border: 0
+            }
+            #site-navigation .dropdown-menu a {
+                color: #FFF;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid rgba(255, 255, 255, .05)
+            }
+            #site-navigation .dropdown-menu li+li a {
+                border-top: 1px solid rgba(0, 0, 0, .2)
+            }
+            #site-navigation .dropdown-menu .active a {
+                background: rgba(0, 0, 0, .3) !important;
+                border: 0;
+                padding-top: 6px;
+                margin-top: -1px;
+                color: #FFF !important
+            }
+            #site-navigation .dropdown-menu li:last-child a {
+                border-bottom: 0
+            }
+        }
+        
+        @media(max-width:1199px) and (min-width:992px) {
+            .home #page-banner {
+                padding-top: 290px;
+                padding-bottom: 145px
+            }
+            #site-navigation .navbar-nav>li>a {
+                padding: 69px 13px;
+                font-size: 13px
+            }
+            #site-navigation .navbar-nav>li.client-area-toggle {
+                margin-left: 16px
+            }
+            #site-navigation .navbar-nav>li.client-area-toggle>a:before {
+                left: -8px
+            }
+            #site-navigation .navbar-nav>li.client-area-toggle>a,
+            #site-navigation .navbar-nav>li.search-initiate>a {
+                font-size: 18px
+            }
+            .styled_title h1:before {
+                width: 300px;
+                background-position: left -5px;
+                left: -312px
+            }
+            .styled_title h1:after {
+                width: 300px;
+                background-position: right -20px;
+                right: -312px
+            }
+        }
+        
+        @media(min-width:992px) {
+            #secondary .widget {
+                padding: 0 15px
+            }
+        }
+        
+        @media(max-width:991px) {
+            #content img,
+            #page-banner img {
+                max-width: 100%;
+                height: auto;
+                right: 0
+            }
+            .home #page-banner {
+                padding-top: 300px;
+                padding-bottom: 150px
+            }
+            #site-navigation .navbar-toggle .icon-bar {
+                background-color: #FFF;
+                height: 2px
+            }
+            #site-navigation .navbar-toggle {
+                border: 0;
+                border-radius: 0;
+                right: 0;
+                margin: 4px 0 0 7px
+            }
+            #site-navigation .navbar-toggle .icon-bar+.icon-bar {
+                margin-top: 3px
+            }
+        }
+        
+        @media(max-width:991px) and (min-width:768px) {
+            body {
+                font-size: 15px
+            }
+            #masthead .site-title {
+                padding: 0
+            }
+            #site-navigation .navbar-header {
+                top: 10px
+            }
+            #off-canvas-navigation .navmenu-nav>.active>a {
+                background: rgba(0, 0, 0, .3)
+            }
+            .site-title a,
+            .site-title img {
+                max-width: 100%;
+                display: block;
+                height: auto
+            }
+            #masthead {
+                padding-top: 15px;
+                padding-bottom: 15px
+            }
+            #masthead .site-branding {
+                padding-top: 5px
+            }
+            h1:before {
+                width: 200px;
+                left: -215px
+            }
+            h1:after {
+                width: 200px;
+                right: -215px;
+                background-position: center right
+            }
+            #site-navigation .navbar-toggle {
+                margin-top: 14px
+            }
+            .styled_title h1:before {
+                width: 200px;
+                background-position: left -5px;
+                left: -212px
+            }
+            .styled_title h1:after {
+                width: 200px;
+                background-position: right -20px;
+                right: -212px
+            }
+            .hubspot-partner-certification-badge br {
+                display: none
+            }
+            .img-center img {
+                max-height: 90px;
+                width: auto;
+                display: inline-block;
+                margin-left: 10px;
+                margin-right: 10px
+            }
+            .page-header {
+                margin-bottom: 40px
+            }
+            #breadcrumbs {
+                margin-bottom: 10px
+            }
+        }
+        
+        @media(max-width:767px) {
+            body {
+                line-height: 1.35
+            }
+            #masthead {
+                position: relative;
+                z-index: 50
+            }
+            #site-navigation {
+                border: 0;
+                border-radius: 0;
+                min-height: 0;
+                margin: 0;
+                padding: 0;
+                overflow: visible;
+                background: none;
+                position: relative
+            }
+            #site-navigation .navbar-header {
+                position: absolute;
+                background: none;
+                top: -55px;
+                right: 15px;
+                z-index: 200
+            }
+            #site-navigation .navbar-collapse {
+                background: #033b50;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-bottom: 2px solid #CCC
+            }
+            #site-navigation .navbar-collapse .nav {
+                margin: 0 -15px
+            }
+            #site-navigation .navbar-nav>.active>a {
+                color: #FFF;
+                background-color: #000;
+                background-color: rgba(0, 0, 0, .3)
+            }
+            #site-navigation .navbar-collapse {
+                border-color: #000;
+                border-color: rgba(0, 0, 0, .3);
+                border-bottom: 0
+            }
+            #site-navigation .navbar-nav>li>a {
+                color: #FFF;
+                border: 0;
+                padding: 10px 15px;
+                font-size: 16px;
+                border-bottom: 1px solid rgba(0, 0, 0, .2)
+            }
+            #site-navigation .navbar-nav>li+li>a {
+                border-top: 1px solid rgba(255, 255, 255, .1)
+            }
+            #site-navigation .navbar-nav>li:last-child a {
+                border-bottom: 0
+            }
+            #navigation-wrap {
+                background: none;
+                border: 0
+            }
+            .site-title a {
+                margin-top: 5px
+            }
+            .site-title a,
+            .site-title img {
+                height: auto;
+                width: 160px;
+                display: block
+            }
+            h1:before,
+            h1:after {
+                display: none
+            }
+            h1 {
+                font-size: 36px;
+                margin-bottom: 30px
+            }
+            #navigation-wrap {
+                position: relative;
+                z-index: 1000;
+                padding: 0
+            }
+            #site-navigation .navbar-header {
+                top: -45px
+            }
+            #masthead {
+                padding-top: 10px;
+                padding-bottom: 10px
+            }
+            .styled_title h1:before {
+                display: none
+            }
+            .styled_title h1:after {
+                display: none
+            }
+            .entry-content>.row:first-child>.col-sm-4:first-child img {
+                margin: 0 auto 30px;
+                margin-top: 0 !important;
+                display: block;
+                float: none
+            }
+            #content .img-center img {
+                height: 60px;
+                width: auto;
+                display: inline-block;
+                margin: 0 10px
+            }
+            .img-center br {
+                display: none
+            }
+            #secondary {
+                padding-top: 1px;
+                padding-bottom: 1px;
+                margin-top: 50px;
+                margin-bottom: -50px
+            }
+            .page-header {
+                margin-bottom: 30px
+            }
+            #breadcrumbs {
+                font-size: 11px
+            }
+            #primary:after {
+                display: table;
+                content: " ";
+                clear: both
+            }
+            #site-navigation a .visible-xs {
+                display: inline-block !important;
+                margin-left: 5px
+            }
+            #search input[type="search"] {
+                font-size: 18px;
+                left: 0
+            }
+            #search .btn {
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                width: 120px;
+                font-size: 16px;
+                padding: 6px
+            }
+            .header-phone {
+                line-height: 24px;
+                font-size: 21px;
+                bottom: -40px;
+                right: 0;
+                left: 0;
+                margin: auto;
+                width: 200px;
+                box-shadow: none;
+                white-space: nowrap
+            }
+            .header-phone a {
+                color: #FFF
+            }
+            .header-phone i {
+                font-size: 24px
+            }
+            .home #page-banner {
+                padding-bottom: 30px;
+                min-height: 0;
+                padding-top: 50px;
+                margin-bottom: 10px
+            }
+            .home #page-banner h1 {
+                font-size: 36px;
+                line-height: 1;
+                height: auto;
+                margin-bottom: 0
+            }
+            #page-banner .btn {
+                padding: 6px 25px;
+                font-size: 15px;
+                margin-bottom: 5px
+            }
+            #page-banner img {
+                max-width: 85%
+            }
+            #page-banner .btn {
+                margin-bottom: 15px;
+                width: 175px
+            }
+            .home #page-banner {
+                padding-top: 181px;
+                padding-bottom: 50px;
+                margin-top: -81px
+            }
+            #page-banner {
+                background-position: center top !important
+            }
+        }
+        
+        @media(min-width:1400px) {
+            .home #page-banner {
+                background-size: 100% auto
+            }
+        }
+
+    </style>
+    <noscript>
+        <link type="text/css" media="all" href="https://profromgo.com/wp-content/cache/autoptimize/css/autoptimize_9bd0b9e4e92358d4d23785a14c1e73c1.css" rel="stylesheet" />
+    </noscript>
+    <title>How To Make An Embedded Google Calendar Responsive</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://profromgo.com/xmlrpc.php">
+    <!--noptimize-->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-4745074-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!--/noptimize-->
+    <meta name="description" content="How I made Google Calendar as responsive as it could be on a WordPress powered website. Complete with code and screnshots." />
+    <meta name="robots" content="noodp,noydir" />
+    <link rel="canonical" href="https://profromgo.com/blog/google-calendar-responsive/" />
+    <link rel="publisher" href="https://plus.google.com/109993836184049655316/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="How To Make An Embedded Google Calendar Responsive" />
+    <meta property="og:description" content="How I made Google Calendar as responsive as it could be on a WordPress powered website. Complete with code and screnshots." />
+    <meta property="og:url" content="https://profromgo.com/blog/google-calendar-responsive/" />
+    <meta property="og:site_name" content="ProFromGo" />
+    <meta property="article:publisher" content="https://www.facebook.com/ProFromGo" />
+    <meta property="article:author" content="vendilli" />
+    <meta property="article:tag" content="Google Calendar" />
+    <meta property="article:tag" content="Responsive" />
+    <meta property="article:tag" content="WordPress" />
+    <meta property="article:section" content="Google Apps" />
+    <meta property="article:published_time" content="2013-07-31T21:37:26+00:00" />
+    <meta property="article:modified_time" content="2015-05-01T12:27:45+00:00" />
+    <meta property="og:updated_time" content="2015-05-01T12:27:45+00:00" />
+    <meta property="fb:admins" content="14214092" />
+    <meta property="fb:admins" content="830857891" />
+    <meta property="og:image" content="https://profromgo.com/wp-content/uploads/2013/07/Dave-Nelsen.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="How I made Google Calendar as responsive as it could be on a WordPress powered website. Complete with code and screnshots." />
+    <meta name="twitter:title" content="How To Make An Embedded Google Calendar Responsive" />
+    <meta name="twitter:site" content="@profromgo" />
+    <meta name="twitter:image" content="https://profromgo.com/wp-content/uploads/2013/07/Dave-Nelsen.jpg" />
+    <meta name="twitter:creator" content="@profromgo" />
+    <link rel="alternate" type="application/rss+xml" title="ProFromGo &raquo; Feed" href="https://profromgo.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="ProFromGo &raquo; Comments Feed" href="https://profromgo.com/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="ProFromGo &raquo; How To Make An Embedded Google Calendar Responsive Comments Feed" href="https://profromgo.com/blog/google-calendar-responsive/feed/" />
+    <link rel='https://api.w.org/' href='https://profromgo.com/wp-json/' />
+    <link rel="alternate" type="application/json+oembed" href="https://profromgo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprofromgo.com%2Fblog%2Fgoogle-calendar-responsive%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://profromgo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprofromgo.com%2Fblog%2Fgoogle-calendar-responsive%2F&#038;format=xml" />
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> <![endif]-->
+</head>
+
+<body class="single single-post postid-4024 single-format-standard group-blog">
+    <nav id="off-canvas-navigation" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+        <button type="button" class="close pull-right" data-toggle="offcanvas" data-target="#off-canvas-navigation" aria-label="Close"><span aria-hidden="true">&times;</span></button> <a class="navmenu-brand" href="http://billing.profromgo.com" data-toggle="offcanvas" data-target="#off-canvas-navigation"><span class="hidden-xs">Client Area</span><span class="visible-xs">Main Menu</span></a>
+        <ul id="menu-mobile-client-area" class="nav navmenu-nav">
+            <li class="hidden-md hidden-lg dropdown menu-services"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="https://profromgo.com/inbound-marketing/">Services <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li class="menu-inbound-marketing"><a href="https://profromgo.com/inbound-marketing/">Inbound Marketing</a></li>
+                    <li class="menu-web-design"><a href="https://profromgo.com/web-design/">Web Design</a></li>
+                    <li class="menu-search-engine-optimization"><a href="https://profromgo.com/seo/">Search Engine Optimization</a></li>
+                    <li class="menu-google-business-view"><a href="https://profromgo.com/google-business-view/">Google Business View</a></li>
+                    <li class="menu-local-seo"><a href="https://profromgo.com/local-seo/">Local SEO</a></li>
+                    <li class="menu-google-apps-for-business"><a href="https://profromgo.com/google-apps-business/">Google Apps for Business</a></li>
+                    <li class="menu-speaking"><a href="https://profromgo.com/speaking-events/">Speaking</a></li>
+                </ul>
+            </li>
+            <li class="hidden-md hidden-lg menu-case-studies"><a href="https://profromgo.com/case-studies/">Case Studies</a></li>
+            <li class="hidden-md hidden-lg menu-resources"><a href="https://profromgo.com/resources/">Resources</a></li>
+            <li class="hidden-md hidden-lg active menu-blog"><a href="https://profromgo.com/blog/">Blog</a></li>
+            <li class="hidden-md hidden-lg menu-about"><a href="https://profromgo.com/about/">About</a></li>
+            <li class="menu-login"><a href="https://billing.profromgo.com">Login</a></li>
+            <li class="menu-register"><a href="http://billing.profromgo.com/register.php">Register</a></li>
+            <li class="menu-contact"><a href="https://profromgo.com/contact/">Contact</a></li>
+            <li class="menu-forgot-password"><a href="http://billing.profromgo.com/pwreset.php">Forgot Password?</a></li>
+        </ul>
+    </nav>
+    <div id="page" class="hfeed site">
+        <header id="masthead" class="site-header" role="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="site-branding col-sm-4 col-md-3">
+                        <div class="site-title">
+                            <a href="https://profromgo.com/" rel="home"><img src="https://profromgo.com/wp-content/themes/profromgo/img/logo.png" alt="ProFromGo"></a>
+                        </div>
+                    </div>
+                    <div id="navigation-wrap" class="col-sm-8 col-md-9">
+                        <nav id="site-navigation" class="navbar navbar-default" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                                <button type="button" class="navbar-toggle visible-sm" data-toggle="offcanvas" data-target="#off-canvas-navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                            </div>
+                            <div class="collapse navbar-collapse" role="navigation">
+                                <ul id="menu-main-navigation" class="nav navbar-nav">
+                                    <li class="dropdown menu-services"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="https://profromgo.com/inbound-marketing/">Services <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="menu-inbound-marketing"><a href="https://profromgo.com/inbound-marketing/">Inbound Marketing</a></li>
+                                            <li class="menu-web-design"><a href="https://profromgo.com/web-design/">Web Design</a></li>
+                                            <li class="menu-search-engine-optimization"><a href="https://profromgo.com/seo/">Search Engine Optimization</a></li>
+                                            <li class="menu-google-business-view"><a href="https://profromgo.com/google-business-view/">Google Business View</a></li>
+                                            <li class="menu-google-apps-for-business"><a href="https://profromgo.com/google-apps-business/">Google Apps for Business</a></li>
+                                            <li class="menu-speaking"><a href="https://profromgo.com/speaking-events/">Speaking</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-case-studies"><a href="https://profromgo.com/case-studies/">Case Studies</a></li>
+                                    <li class="menu-resources"><a href="https://profromgo.com/resources/">Resources</a></li>
+                                    <li class="active menu-blog"><a href="https://profromgo.com/blog/">Blog</a></li>
+                                    <li class="menu-about"><a href="https://profromgo.com/about/">About</a></li>
+                                    <li class="menu-contact"><a href="https://profromgo.com/contact/">Contact</a></li>
+                                    <li class="visible-xs menu-client-area"><a href="https://billing.profromgo.com">Client Area</a></li>
+                                    <li class="client-area-toggle hidden-xs menu-"><a href="#"><i class="fa fa-user"></i></a></li>
+                                    <li class="search-initiate hidden-xs menu-search"><a href="#search"><i class="fa fa-search"></i> <span class="visible-xs">Search</span></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <ol id="breadcrumbs" class="breadcrumb container" itemprop="breadcrumb">
+            <li><a href="https://profromgo.com">Home</a></li>
+            <li><a href="https://profromgo.com/blog/">Internet Marketing Blog</a></li>
+            <li class="active">How To Make An Embedded Google Calendar Responsive</li>
+        </ol>
+        <div id="content" class="container">
+            <header class="page-header">
+                <div class="styled_title">
+                    <h1 class="page-title">Internet Marketing Blog</h1></div>
+            </header>
+            <div id="content-row" class="row">
+                <div id="primary" class="content-area col-sm-8">
+                    <main id="main" class="site-main" role="main">
+                        <article id="post-4024" class="post-4024 post type-post status-publish format-standard has-post-thumbnail hentry category-google-apps category-web-design-tips tag-google-calendar tag-responsive tag-wordpress">
+                            <header class="entry-header">
+                                <h1 class="page-title">How To Make An Embedded Google Calendar Responsive</h1>
+                                <div class="entry-meta"> <span class="byline">By: <span class="author vcard"><a class="url fn n" href="https://profromgo.com/blog/author/chris-vendilli/">Chris Vendilli</a></span></span>
+                                    <br><span class="posted-on"><time class="entry-date published" datetime="2013-07-31T21:37:26+00:00">July 31, 2013</time><time class="updated" datetime="2015-05-01T12:27:45+00:00">May 1, 2015</time></span></div>
+                            </header>
+                            <div class="entry-content"> <img width="225" height="225" src="https://profromgo.com/wp-content/uploads/2013/07/Dave-Nelsen-225x225.jpg" class="alignleft wp-post-image" alt="Dave Nelsen" srcset="https://profromgo.com/wp-content/uploads/2013/07/Dave-Nelsen-225x225.jpg 225w, https://profromgo.com/wp-content/uploads/2013/07/Dave-Nelsen.jpg 250w" sizes="(max-width: 225px) 100vw, 225px" />
+                                <p>The ProFromGo team recently completed a project for our new friend Dave Nelsen over at <a title="Dialog Consulting" href="http://dialogconsulting.com/">Dialog Consulting</a>. The main goals of the project were to give the Dialog site a makeover of sorts, to make it responsive to mobile devices, and to make sure it was all powered by our favorite CMS, <a title="WordPress" href="http://wordpress.org/">WordPress</a>.</p>
+                                <p>Dave also opted for a <a title="Google Apps for Business" href="http://www.google.com/intx/en/enterprise/apps/business/">Google Apps</a> package that I setup and deployed for his domain to include all the run of the mill Google Apps goodies like Gmail, Google Calendar, and etc.</p>
+                                <p>As a social media speaker and strategist, Dave is a guy who is constantly on the move so this cloud based solution really suited his business model and lifestyle. He does speaking engagements and presentations all over North America with a traveling schedule that could easily rival Obama&#8217;s.</p>
+                                <p>Due to Dave&#8217;s insane speaking schedule, getting his <a title="Google Calendar" href="https://support.google.com/calendar/answer/2465776?hl=en">Google Calendar</a> embedded on the website so that his clientele, friends, family, and other colleagues could all keep an eye on him and his whereabouts, in a way where he could update it from any of his devices on the fly, was a major area of concern for this project.</p>
+                                <p>Considering that <a title="Google recommends responsive web design" href="https://developers.google.com/webmasters/smartphone-sites/details">Google outright recommends responsive web design</a>, I find it a bit interesting that many Google products are still only available in fixed-width formats. But if you read this far, I&#8217;m sure you&#8217;re hoping there is a solution in the near future, and I assure you&#8230; there is!</p>
+                                <p>Our solution for Dave that allowed us to make Google Calendar responsive involved two parts.</p>
+                                <h2>Part One: Create a Responsive iFrame Container</h2>
+                                <p>I borrowed a bit of code and the idea itself <a title="Embed Google Maps &amp; Calendars in a responsive WordPress Theme" href="http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/">from another blog post</a> I had come across in my adventures of seeking out a solution. You&#8217;ll see if you take the time to visit that post it mainly addresses the entire issue as covered here in part one, but I didn&#8217;t write this whole blog post just to share a solution I had found elsewhere&#8230; I take it a step further in part two&#8230; That being said, simply for convenience&#8217;s sake here is the code I borrowed from <a title="ThemeLoom" href="http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/">ThemeLoom</a>, I&#8217;m hoping they won&#8217;t mind considering I threw them two links and cited my source :).</p>
+                                <p><em><strong>First, add this code to your CSS stylesheet:</strong></em></p>
+                                <p>[code]
+                                    <br /> /* Responsive iFrame */</p>
+                                <p>.responsive-iframe-container {
+                                    <br /> position: relative;
+                                    <br /> padding-bottom: 56.25%;
+                                    <br /> padding-top: 30px;
+                                    <br /> height: 0;
+                                    <br /> overflow: hidden;
+                                    <br /> }</p>
+                                <p>.responsive-iframe-container iframe,
+                                    <br /> .vresponsive-iframe-container object,
+                                    <br /> .vresponsive-iframe-container embed {
+                                    <br /> position: absolute;
+                                    <br /> top: 0;
+                                    <br /> left: 0;
+                                    <br /> width: 100%;
+                                    <br /> height: 100%;
+                                    <br /> }
+                                    <br /> [/code]</p>
+                                <p>And there is a Part &#8220;1a,&#8221; you&#8217;ll want to wrap your Google Calendar embed code inside of a container that tells your site this thing should resize itself a bit:</p>
+                                <p>[code]
+                                    <br />
+                                </p>
+                                <div class="responsive-iframe-container"></div>
+                                <p>[/code]</p>
+                                <h2>Part Two: Take Advantage of Bootstrap&#8217;s Available Classes, and Google Calendar&#8217;s Customization Options</h2>
+                                <p>Once you&#8217;ve setup your responsive iframe container, there&#8217;s still a few more things you can do to tweak this a little tighter for an optimal user experience for your visitors.</p>
+                                <p>I took advantage of a few of the available classes in <a title="Bootstrap" href="http://twitter.github.io/bootstrap/">Bootstrap</a> and combined them with a few of the customization options in Google Calendar&#8217;s embed tool which when blended together, made for a perfect user experience.</p>
+                                <p>The first thing to familiarize yourself with in order to capitalize on the existing <a title="Responsive Utility Classes | Bootstrap" href="http://getbootstrap.com/2.3.2/scaffolding.html">Bootstrap CSS responsive utility classes</a> would be this table, which I screen captured for convenience sake:</p>
+                                <p>
+                                    <a href="http://getbootstrap.com/2.3.2/scaffolding.html"><img class="aligncenter size-full wp-image-4032" src="https://profromgo.com/wp-content/uploads/2013/07/responsive-utility-classes.png" alt="Responsive Utility Classes" width="545" height="295" srcset="https://profromgo.com/wp-content/uploads/2013/07/responsive-utility-classes-300x162.png 300w, https://profromgo.com/wp-content/uploads/2013/07/responsive-utility-classes.png 545w" sizes="(max-width: 545px) 100vw, 545px" /></a>
+                                </p>
+                                <p>The two responsive utility classes that will be of special use in this application will be &#8220;visible-phone&#8221; and &#8220;hidden-phone.&#8221; Using these two options and the <a title="Google Calendar Embed Helper" href="https://support.google.com/calendar/answer/41207?hl=en">Google Calendar Embed Helper</a> I actually got the iFrame embed code for TWO different versions of the calendar:</p>
+                                <ol>
+                                    <li><span style="font-size: 13px;">A full monthly view of the calendar which I made visible to desktops and tablet users</span></li>
+                                    <li><span style="font-size: 13px;">A more narrow agenda view of the calendar that I used to show mobile phone users.</span></li>
+                                </ol>
+                                <p><strong>P.S. &#8211; </strong>You can get to the Google Calendar embed helper by logging into your Google Calendar that you&#8217;d like to make responsive and following this breadcrumb trail:</p>
+                                <ul>
+                                    <li><em style="font-size: 13px;"><strong>Gear Icon -&gt; Settings -&gt; Calendars -&gt; click the title of the calendar you&#8217;d like to embed</strong></em></li>
+                                </ul>
+                                <p>Once you&#8217;re on this page you&#8217;ll see a whole section that is described as &#8220;Embed this Calendar&#8221; and over to the right you&#8217;ll notice a link that says &#8220;Customize the color, size, and other options.&#8221;</p>
+                                <p><em><strong>The tool will look like this:</strong></em></p>
+                                <p><img class="aligncenter size-full wp-image-4033" src="https://profromgo.com/wp-content/uploads/2013/07/google-calendar-embeddable-helper.png" alt="Google Calendar Embed Helper" width="500" height="442" srcset="https://profromgo.com/wp-content/uploads/2013/07/google-calendar-embeddable-helper-300x265.png 300w, https://profromgo.com/wp-content/uploads/2013/07/google-calendar-embeddable-helper.png 500w" sizes="(max-width: 500px) 100vw, 500px" /></p>
+                                <p>The core concept here is to show the bigger &#8220;Calendar View&#8221; of your Google Calendar on tablets &amp; desktops, and a more narrow &#8220;Agenda View&#8221; to visitors using a mobile phone.</p>
+                                <p>You will probably want to toy around a little bit with the width and height options in order to season to taste, but you can see what I eventually ended up with quite easily by scouring the final code I pasted below.</p>
+                                <p>And without further adieu, here&#8217;s the final code that I embedded on Dave&#8217;s website so you can see the finished product&#8230; you can also <a title="Example of a responsive Google Calendar" href="http://dialogconsulting.com/speaking/">take a peek at the actual responsive web page where the Google Calendar is embedded</a> and play with the browser width by resizing to see the end result in action:</p>
+                                <p>[code]</p>
+                                <div class="hidden-phone responsive-iframe-container">
+                                    <iframe src="https://www.google.com/calendar/embed?title=Speaking%20Engagements&amp;height=575&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=dialogconsulting.com_k363h3uf0l9705gt3ufo90oq0g%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FNew_York" width="575" height="575" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                                <div class="visible-phone">
+                                    <iframe src="https://www.google.com/calendar/embed?mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=dialogconsulting.com_k363h3uf0l9705gt3ufo90oq0g%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FNew_York" width="280" height="500" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                                <p>[/code]</p>
+                                <p>Now Dave can manage his Google Calendar from his mobile devices, laptop, desktop or anywhere else he has an Internet connection and almost as soon as he saves a new event, his website&#8217;s &#8220;Speaking&#8221; page is near instantly updated. Even better, visitors checking out his site on mobile devices see his awesomely responsive custom WordPress theme complete with is up to the minute speaking schedule.</p>
+                                <p>If you found this post helpful, please leave a comment or give me a Tweet, Like, or Share!</p>
+                                <p style="text-align: center;">
+                                    <div align="center">
+                                        <div id='hs_custom_form'> <span class="hs-cta-wrapper" id="hs-cta-wrapper-12b26af4-8e7f-47fc-8b74-b6db17b0fa5f"> <span class="hs-cta-node hs-cta-12b26af4-8e7f-47fc-8b74-b6db17b0fa5f" id="hs-cta-12b26af4-8e7f-47fc-8b74-b6db17b0fa5f"> <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--> <a href="http://cta-redirect.hubspot.com/cta/redirect/371347/12b26af4-8e7f-47fc-8b74-b6db17b0fa5f" ><img class="hs-cta-img" id="hs-cta-img-12b26af4-8e7f-47fc-8b74-b6db17b0fa5f" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/371347/12b26af4-8e7f-47fc-8b74-b6db17b0fa5f.png"  alt="New Call-to-action" /></a> </span>
+                                            <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </article>
+                        <div id="comments" class="comments-area">
+                            <h2 class="comments-title">Join the conversation:</h2>
+                            <div class="comment-list">
+                                <div id="comment-613" class="comment even thread-even depth-1 media parent div-comment-613">
+                                    <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/f2ecd731e7dc11e52f9acf6a3365600b?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/f2ecd731e7dc11e52f9acf6a3365600b?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                    <div class="media-body">
+                                        <h4><cite class="fn">Jared</cite> <small class="text-muted"><time datetime="2013-08-18T19:21:14+00:00">3 years ago</small></time></h4>
+                                        <div class="comment-content">
+                                            <p>I love this!! Quick question, I noticed on my iPAD that the Calendar Cells in your example keep stretching down after the page has loaded. This has the effect that eventually you only see a week worth of info. It happens quick resulting in loss of view of a week every 14 seconds. Any idea what may be causing this?</p>
+                                            <p>Thank you,
+                                                <br /> Jared</p>
+                                        </div>
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=613#respond' onclick='return addComment.moveForm( "div-comment-613", "613", "respond", "4024" )' aria-label='Reply to Jared'>Reply</a></div>
+                                        <div id="comment-614" class="comment byuser comment-author-chris-vendilli bypostauthor odd alt depth-2 media div-comment-614">
+                                            <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                            <div class="media-body">
+                                                <h4><cite class="fn"><a href='http://profromgo.com' rel='external nofollow' class='url'>Chris Vendilli</a></cite> <small class="text-muted"><time datetime="2013-08-18T22:03:36+00:00">3 years ago</small></time></h4>
+                                                <div class="comment-content">
+                                                    <p>Hmm. Good catch. Very strange indeed. I didn&#8217;t notice this before when I first wrote up the blog post and I definitely tested it on my iPad as well.</p>
+                                                    <p>I&#8217;m seeing what you&#8217;re describing but not certain what&#8217;s causing it&#8230;</p>
+                                                    <p>Another idea to fix this may be to have three different options viewable dependent on phone, tablet, or desktop. You can use the bootstrap CSS to differentiate all three and then rather than use that responsive container, instead just use a different fixed width for each scenario&#8230;</p>
+                                                </div>
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=614#respond' onclick='return addComment.moveForm( "div-comment-614", "614", "respond", "4024" )' aria-label='Reply to Chris Vendilli'>Reply</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="comment-636" class="comment even thread-odd thread-alt depth-1 media parent div-comment-636">
+                                    <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/4318c3533fe762d080e71c920f718920?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/4318c3533fe762d080e71c920f718920?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                    <div class="media-body">
+                                        <h4><cite class="fn"><a href='http://www.rbvband.org' rel='external nofollow' class='url'>Bobby</a></cite> <small class="text-muted"><time datetime="2013-08-29T16:50:41+00:00">2 years ago</small></time></h4>
+                                        <div class="comment-content">
+                                            <p>Chris,</p>
+                                            <p>Thanks for this! I am working for a non-profit and was able to get the sizing working, however, as with your live site linked above, when I resize the screen smaller, I do not see the Agenda view, just a condensed full calendar.</p>
+                                            <p>Any suggestions?</p>
+                                        </div>
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=636#respond' onclick='return addComment.moveForm( "div-comment-636", "636", "respond", "4024" )' aria-label='Reply to Bobby'>Reply</a></div>
+                                        <div id="comment-657" class="comment byuser comment-author-chris-vendilli bypostauthor odd alt depth-2 media div-comment-657">
+                                            <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                            <div class="media-body">
+                                                <h4><cite class="fn"><a href='http://profromgo.com' rel='external nofollow' class='url'>Chris Vendilli</a></cite> <small class="text-muted"><time datetime="2013-09-08T00:27:54+00:00">2 years ago</small></time></h4>
+                                                <div class="comment-content">
+                                                    <p>What browser are you using?</p>
+                                                    <p>In all my testing the live site mentioned shows the agenda once the browser is resized to cell phone-ish width. Thanks for the comment, even better would be if you could post a link to your example in action so long as it&#8217;s rated G.</p>
+                                                </div>
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=657#respond' onclick='return addComment.moveForm( "div-comment-657", "657", "respond", "4024" )' aria-label='Reply to Chris Vendilli'>Reply</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="comment-659" class="comment even thread-even depth-1 media parent div-comment-659">
+                                    <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/b0a808941949f0c6e2cc46b8a9e92e28?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/b0a808941949f0c6e2cc46b8a9e92e28?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                    <div class="media-body">
+                                        <h4><cite class="fn">Yves Dreger</cite> <small class="text-muted"><time datetime="2013-09-09T06:32:06+00:00">2 years ago</small></time></h4>
+                                        <div class="comment-content">
+                                            <p>Hey Chris,</p>
+                                            <p>thats great.
+                                                <br /> But i have a problem. If i looked at my site it shows me everytime two calenders.
+                                                <br /> 1. the monthly
+                                                <br /> 2. the Agenda</p>
+                                            <p>Do you have an idea?</p>
+                                        </div>
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=659#respond' onclick='return addComment.moveForm( "div-comment-659", "659", "respond", "4024" )' aria-label='Reply to Yves Dreger'>Reply</a></div>
+                                        <div id="comment-664" class="comment byuser comment-author-chris-vendilli bypostauthor odd alt depth-2 media div-comment-664">
+                                            <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                            <div class="media-body">
+                                                <h4><cite class="fn"><a href='http://profromgo.com' rel='external nofollow' class='url'>Chris Vendilli</a></cite> <small class="text-muted"><time datetime="2013-09-16T22:07:40+00:00">2 years ago</small></time></h4>
+                                                <div class="comment-content">
+                                                    <p>Hi Yves,</p>
+                                                    <p>I can only speculate but based on what you&#8217;ve told me my first suspicion is that you may not have properly utilized the bootstrap CSS classes for showing and hiding certain snippets of content.</p>
+                                                </div>
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=664#respond' onclick='return addComment.moveForm( "div-comment-664", "664", "respond", "4024" )' aria-label='Reply to Chris Vendilli'>Reply</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="comment-668" class="comment even thread-odd thread-alt depth-1 media parent div-comment-668">
+                                    <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e698979a284792a525961105a62ba49e?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e698979a284792a525961105a62ba49e?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                    <div class="media-body">
+                                        <h4><cite class="fn"><a href='http://www.gracemendham.org' rel='external nofollow' class='url'>laura-ann</a></cite> <small class="text-muted"><time datetime="2013-09-20T02:10:07+00:00">2 years ago</small></time></h4>
+                                        <div class="comment-content">
+                                            <p>i found your site because you left an answer on the rapidweaver forum on how to make a google calendar responsive. my question is where in rapidweaver would i put the css you talk about?</p>
+                                        </div>
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=668#respond' onclick='return addComment.moveForm( "div-comment-668", "668", "respond", "4024" )' aria-label='Reply to laura-ann'>Reply</a></div>
+                                        <div id="comment-670" class="comment byuser comment-author-chris-vendilli bypostauthor odd alt depth-2 media div-comment-670">
+                                            <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                            <div class="media-body">
+                                                <h4><cite class="fn"><a href='http://profromgo.com' rel='external nofollow' class='url'>Chris Vendilli</a></cite> <small class="text-muted"><time datetime="2013-09-22T10:02:33+00:00">2 years ago</small></time></h4>
+                                                <div class="comment-content">
+                                                    <p>Hi Laura-Ann,</p>
+                                                    <p>The same stylesheet that&#8217;s used for all of your other fonts and styles is where you&#8217;d want to put the CSS described in this blog walkthru.</p>
+                                                </div>
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=670#respond' onclick='return addComment.moveForm( "div-comment-670", "670", "respond", "4024" )' aria-label='Reply to Chris Vendilli'>Reply</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="comment-675" class="comment even thread-even depth-1 media parent div-comment-675">
+                                    <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/4c1bcc6c7874ad7bf8a3b03ca9437ba9?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/4c1bcc6c7874ad7bf8a3b03ca9437ba9?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                    <div class="media-body">
+                                        <h4><cite class="fn"><a href='http://www.mrsburman.com' rel='external nofollow' class='url'>Amanda</a></cite> <small class="text-muted"><time datetime="2013-09-24T10:51:39+00:00">2 years ago</small></time></h4>
+                                        <div class="comment-content">
+                                            <p>I am a teacher and I have always used blogger as my classroom website platform. I have come to love it, until recently&#8230; Our school just went 1:1 with Apple iPads and well, so much isn&#8217;t compatible. I have a calendar setup to be embedded on a page and it shows on desktops but not the iPads or iPhones! I tried the codes, but it isn&#8217;t working. Any suggestions?</p>
+                                        </div>
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=675#respond' onclick='return addComment.moveForm( "div-comment-675", "675", "respond", "4024" )' aria-label='Reply to Amanda'>Reply</a></div>
+                                        <div id="comment-683" class="comment byuser comment-author-chris-vendilli bypostauthor odd alt depth-2 media div-comment-683">
+                                            <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                            <div class="media-body">
+                                                <h4><cite class="fn"><a href='http://profromgo.com' rel='external nofollow' class='url'>Chris Vendilli</a></cite> <small class="text-muted"><time datetime="2013-10-02T18:32:30+00:00">2 years ago</small></time></h4>
+                                                <div class="comment-content">
+                                                    <p>When using a service like blogger you&#8217;re going to have much less control over CSS classes and some of the other elements necessary to make not just the calendar responsive but your blog as a whole.</p>
+                                                </div>
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=683#respond' onclick='return addComment.moveForm( "div-comment-683", "683", "respond", "4024" )' aria-label='Reply to Chris Vendilli'>Reply</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="comment-1156" class="comment even thread-odd thread-alt depth-1 media parent div-comment-1156">
+                                    <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e1a0d446ce88bf63843b903e4bd620d5?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e1a0d446ce88bf63843b903e4bd620d5?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                    <div class="media-body">
+                                        <h4><cite class="fn">Eric</cite> <small class="text-muted"><time datetime="2014-01-16T07:54:42+00:00">2 years ago</small></time></h4>
+                                        <div class="comment-content">
+                                            <p>Hello Chris, I implemented the solution you proposed and it works very well. Thank you very much for your expert work and advises. It is much appreciated. So thanks!</p>
+                                            <p>However, I still have a little issue: I tested the site on iPad, iPad mini, iPhone, MacBook 13&#8243; and iMac 27&#8243; with Safari, FireFox and Chrome.</p>
+                                            <p>On desktop screens everything looks great. But on both iPhones and iPads when I resize from Landscap to Portrait, I loose the bottom of the calendar and the cells are compressed. BUT, When I refresh the page (or load it initially from Portrait mode) everything looks okay. !!</p>
+                                            <p>Do I have to &#8220;play&#8221; with the padding-bottom: 56.25%; ?</p>
+                                            <p>Do you have any idea Chris, please?</p>
+                                            <p>Thank you!</p>
+                                        </div>
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=1156#respond' onclick='return addComment.moveForm( "div-comment-1156", "1156", "respond", "4024" )' aria-label='Reply to Eric'>Reply</a></div>
+                                        <div id="comment-1163" class="comment byuser comment-author-chris-vendilli bypostauthor odd alt depth-2 media div-comment-1163">
+                                            <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                            <div class="media-body">
+                                                <h4><cite class="fn"><a href='http://profromgo.com' rel='external nofollow' class='url'>Chris Vendilli</a></cite> <small class="text-muted"><time datetime="2014-01-16T14:49:34+00:00">2 years ago</small></time></h4>
+                                                <div class="comment-content">
+                                                    <p>Hi Eric,</p>
+                                                    <p>I&#8217;m not sure what might be causing that issue and I have heard of many others having similar problems, including a few of our clients. If we come up with a solution in the near future I will post back here.</p>
+                                                </div>
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=1163#respond' onclick='return addComment.moveForm( "div-comment-1163", "1163", "respond", "4024" )' aria-label='Reply to Chris Vendilli'>Reply</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="comment-1164" class="comment even thread-even depth-1 media parent div-comment-1164">
+                                    <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e1a0d446ce88bf63843b903e4bd620d5?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e1a0d446ce88bf63843b903e4bd620d5?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                    <div class="media-body">
+                                        <h4><cite class="fn">Eric</cite> <small class="text-muted"><time datetime="2014-01-16T14:54:07+00:00">2 years ago</small></time></h4>
+                                        <div class="comment-content">
+                                            <p>Hi Chris,</p>
+                                            <p>Thank you for your answer. That is really cool to be able to talk with a real expert. I&#8217;ll keep monitoring the forum&#8230; Is the padding-bottom: 56.25%; parameter important?</p>
+                                            <p>Thanks.</p>
+                                        </div>
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=1164#respond' onclick='return addComment.moveForm( "div-comment-1164", "1164", "respond", "4024" )' aria-label='Reply to Eric'>Reply</a></div>
+                                        <div id="comment-1172" class="comment byuser comment-author-chris-vendilli bypostauthor odd alt depth-2 media div-comment-1172">
+                                            <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                            <div class="media-body">
+                                                <h4><cite class="fn"><a href='http://profromgo.com' rel='external nofollow' class='url'>Chris Vendilli</a></cite> <small class="text-muted"><time datetime="2014-02-02T11:22:56+00:00">2 years ago</small></time></h4>
+                                                <div class="comment-content">
+                                                    <p>Hi Eric,</p>
+                                                    <p>Feel free to play around and tinker with any of the elements or parameters in this walkthru to season it to your taste. I&#8217;m certain there&#8217;s more ways than mine to get it clicking the way you want.</p>
+                                                    <p>I think in this example the padding bottom just gives the calendar some breathing room from the content that follows after it&#8230;</p>
+                                                </div>
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=1172#respond' onclick='return addComment.moveForm( "div-comment-1172", "1172", "respond", "4024" )' aria-label='Reply to Chris Vendilli'>Reply</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="comment-1795" class="comment even thread-odd thread-alt depth-1 media parent div-comment-1795">
+                                    <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/68645bc1c995122b9c11425f6c47ee21?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/68645bc1c995122b9c11425f6c47ee21?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                    <div class="media-body">
+                                        <h4><cite class="fn">Hal Lee B</cite> <small class="text-muted"><time datetime="2014-06-12T17:28:00+00:00">2 years ago</small></time></h4>
+                                        <div class="comment-content">
+                                            <p>I found this site after Googling &#8220;google embeddable helper.&#8221; For me the calendar does not display the navigation controls at all. I&#8217;m pasting the code into the source code tab for a Google website, so it seems like it should be compatible.</p>
+                                            <p>Would love to implement your customizations in the future, but at this point I just want the navigation controls to work!</p>
+                                        </div>
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=1795#respond' onclick='return addComment.moveForm( "div-comment-1795", "1795", "respond", "4024" )' aria-label='Reply to Hal Lee B'>Reply</a></div>
+                                        <div id="comment-1796" class="comment odd alt depth-2 media div-comment-1796">
+                                            <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/e00f601da641dd69619afc0753f43709?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                            <div class="media-body">
+                                                <h4><cite class="fn"><a href='http://profromgo.com' rel='external nofollow' class='url'>Chris Vendilli</a></cite> <small class="text-muted"><time datetime="2014-06-12T19:21:00+00:00">2 years ago</small></time></h4>
+                                                <div class="comment-content">
+                                                    <p>When you&#8217;re getting your code from the embed tool toward the upper left area there&#8217;s a section titled &#8220;Show&#8221; and underneath it are several tick boxes for your options. Do you have the tick box checked next to &#8220;Navigation Controls&#8221; ??</p>
+                                                    <p>That&#8217;d be my first guess&#8230; I know that seems obvious but sometimes the simple hunch is the right one.</p>
+                                                </div>
+                                                <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=1796#respond' onclick='return addComment.moveForm( "div-comment-1796", "1796", "respond", "4024" )' aria-label='Reply to Chris Vendilli'>Reply</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="comment-3079" class="comment even thread-even depth-1 media div-comment-3079">
+                                    <div class="comment-author vcard media-left"> <img alt='' src='https://secure.gravatar.com/avatar/fe6025c6e3675db2422c4fbfeaa6b0c0?s=32&#038;d=retro&#038;r=g' srcset='https://secure.gravatar.com/avatar/fe6025c6e3675db2422c4fbfeaa6b0c0?s=64&amp;d=retro&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></div>
+                                    <div class="media-body">
+                                        <h4><cite class="fn">Jake</cite> <small class="text-muted"><time datetime="2014-11-05T13:50:00+00:00">1 year ago</small></time></h4>
+                                        <div class="comment-content">
+                                            <p>Brilliant, I&#8217;m looking forward to using this. I love how this type of thinking allows sites to stop having &#8220;mobile versions&#8221;, and to just respond to the user&#8217;s screen.</p>
+                                        </div>
+                                        <div class="reply"><a rel='nofollow' class='comment-reply-link btn btn-sm btn-default' href='https://profromgo.com/blog/google-calendar-responsive/?replytocom=3079#respond' onclick='return addComment.moveForm( "div-comment-3079", "3079", "respond", "4024" )' aria-label='Reply to Jake'>Reply</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="respond" class="comment-respond">
+                                <h3 id="reply-title" class="comment-reply-title">Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/google-calendar-responsive/#respond" style="display:none;">Cancel reply</a></small></h3>
+                                <form action="https://profromgo.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+                                    <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+                                    <p class="comment-form-comment">
+                                        <label for="comment">Comment</label>
+                                        <textarea id="comment" name="comment" class="form-control" aria-required="true"></textarea>
+                                    </p>
+                                    <p class="comment-form-author">
+                                        <label for="author">Name <span class="required">*</span></label>
+                                        <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' />
+                                    </p>
+                                    <p class="comment-form-email">
+                                        <label for="email">Email <span class="required">*</span></label>
+                                        <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' />
+                                    </p>
+                                    <p class="comment-form-url">
+                                        <label for="url">Website</label>
+                                        <input id="url" name="url" type="text" value="" size="30" />
+                                    </p>
+                                    <p class="form-submit">
+                                        <input name="submit" type="submit" id="submit" class="btn btn-default btn-sm pull-right" value="Post" />
+                                        <input type='hidden' name='comment_post_ID' value='4024' id='comment_post_ID' />
+                                        <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                                    </p>
+                                    <p style="display: none;">
+                                        <input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4866da3f60" />
+                                    </p>
+                                    <p style="display: none;">
+                                        <input type="hidden" id="ak_js" name="ak_js" value="159" />
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <div id="secondary" class="widget-area col-sm-4 col-md-3 col-md-offset-1" role="complementary">
+                    <aside id="text-44" class="widget widget_text">
+                        <h3 class="widget-title">Get In Touch</h3>
+                        <div class="textwidget">
+                            <p>We're waiting to hear
+                                <br /> about your project.</p>
+                            <p>(412) 530-5027</p>
+                            <p>18 Terminal Way
+                                <br /> Pittsburgh, PA 15219</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div id="footer-ribbon">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4"> <i class="fa fa-paper-plane"></i> Info@ProFromGo.com</div>
+                    <div class="col-sm-5"> <i class="fa fa-home"></i> 18 Terminal Way, Pittsburgh, PA 15219</div>
+                    <div class="col-sm-3"> <i class="fa fa-phone"></i> (412) 530-5027</div>
+                </div>
+            </div>
+        </div>
+        <footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="site-info container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <div class="row">
+                            <div id="footer" class="col-sm-4">
+                                <aside id="text-19" class="widget widget_text">
+                                    <div class="textwidget"><img class="footer-logo" src="https://profromgo.com/wp-content/themes/profromgo/img/logo.png"></div>
+                                </aside>
+                            </div>
+                            <div id="footer-2" class="col-sm-5">
+                                <aside id="text-22" class="widget widget_text">
+                                    <div class="textwidget">
+                                        <div class="social-icons">
+                                            <ul class="list-inline">
+                                                <li><a href="http://twitter.com/ProFromGo"><i class="fa fa-twitter-square"></i></a></li>
+                                                <li><a href="https://www.linkedin.com/company/profromgo-internet-marketing"><i class="fa fa-linkedin-square"></i></a></li>
+                                                <li><a href="http://www.facebook.com/ProFromGo"><i class="fa fa-facebook-square"></i></a></li>
+                                                <li><a href="http://www.youtube.com/ProFromGo"><i class="fa fa-youtube-square"></i></a></li>
+                                                <li><a href="https://plus.google.com/109993836184049655316"><i class="fa fa-google-plus-square"></i></a></li>
+                                            </ul>
+                                            </div</div>
+                                </aside>
+                                </div>
+                                <div id="footer-3" class="col-sm-3">
+                                    <aside id="text-17" class="widget widget_text">
+                                        <div class="textwidget">
+                                            <form action="https://profromgo.com" method="get">
+                                                <label><span class="sr-only">Search</span><i class="sprite sprite-icon-search"></i>
+                                                    <input type="text" class="form-control input-search" placeholder="Search" name="s">
+                                                </label>
+                                            </form>
+                                        </div>
+                                    </aside>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search">
+                        <button type="button" class="close">×</button>
+                        <form action="https://profromgo.com" method="get">
+                            <input type="search" name="s" value="" placeholder="Type search phrase here..." />
+                            <input type="submit" class="btn btn-primary btn-lg" value="Search">
+                            <input type="hidden" name="post_type" value="product">
+                        </form>
+                    </div>
+                    <div id="copyright">
+                        <div class="container">
+                            <div class="row">
+                                <div id="copyright-content" class="col-sm-12 hidden-xs">
+                                    <div class="text-center">
+                                        <aside id="text-45" class="widget widget_text">
+                                            <div class="textwidget">
+                                                <p>Copyright © 2015 ProFromGo Internet Marketing, LLC. All Rights Reserved.</p>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </footer>
+        </div>
+        <noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-T774R5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <script type="text/javascript" src="//js.leadin.com/js/v1/1672515.js" id="LeadinEmbed-1672515" crossorigin="use-credentials" async defer></script>
+        <link rel='stylesheet' id='profromgo-font-styles-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300italic%2C300%2C400italic%2C600%2C700%7CRoboto+Slab&#038;ver=4.4.2' type='text/css' media='all' />
+        <script type="text/javascript" defer src="https://profromgo.com/wp-content/cache/autoptimize/js/autoptimize_49872e1e859e735239508aab8180e1b2.js"></script>
+        <script>
+            function lCss(url, media) {
+                var d = document;
+                var l = d.createElement('link');
+                l.rel = 'stylesheet';
+                l.type = 'text/css';
+                l.href = url;
+                l.media = media;
+                aoin = d.getElementsByTagName('noscript')[0];
+                aoin.parentNode.insertBefore(l, aoin.nextSibling);
+            }
+
+            function deferredCSS() {
+                lCss('https://profromgo.com/wp-content/cache/autoptimize/css/autoptimize_9bd0b9e4e92358d4d23785a14c1e73c1.css', 'all');
+            }
+            if (window.addEventListener) {
+                window.addEventListener('DOMContentLoaded', deferredCSS, false);
+            } else {
+                window.onload = deferredCSS;
+            }
+
+        </script>
+</body>
+
+</html>
+<!-- Dynamic page generated in 0.548 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-02-17 22:46:16 -->
+
+<!-- super cache -->

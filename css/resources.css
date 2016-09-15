@@ -1,0 +1,32 @@
+.blinking {
+    animation-name: blinking;
+    /*  animation name which is attached to .blinking class */
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    /*this effect will run for infinite times*/
+    animation-direction: alternate;
+}
+@keyframes blinking {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+@-moz-keyframes blinking {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+@-webkit-keyframes blinking {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
